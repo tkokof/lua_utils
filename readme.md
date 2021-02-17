@@ -336,13 +336,6 @@ dump string of **source** table
 --------
 > **string utils**
 --------
-### split2(str, delimiter)
-#### desc : 
-#### params : 
-- str : 
-- delimiter : 
-#### return : 
---------
 ### trim(str)
 #### desc : 
 #### params : 
