@@ -425,12 +425,14 @@ clamped num
 ### inRange(num, low, high)
 #### desc : 
 check **num** is in range [**low**, **high**], **low** should <= **high**
+
 #### params : 
 - num : target num
 - low : left range
 - high : right range
 #### return : 
 return **true** when **num** is in range [**low**, **high**], otherwise return **false**
+
 --------
 ### inRange01(num)
 #### desc : 
@@ -439,6 +441,7 @@ check **num** is in range [**0**, **1**]
 - num : target num
 #### return : 
 return **true** when **num** is in range [**0**, **1**], otherwise return **false**
+
 --------
 ### round(num)
 #### desc : 
@@ -447,6 +450,7 @@ round **num** to closet integer
 - num : target num
 #### return : 
 return integer closet to **num**
+
 --------
 
 ## usage(TODO)
