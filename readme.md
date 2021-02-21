@@ -338,35 +338,50 @@ dump string of **source** table
 --------
 ### trim(str)
 #### desc : 
+trim left and right space characters of **str**
 #### params : 
-- str : 
+- str : target string
 #### return : 
+return trimmed string(**str** is not changed)
+
 --------
 ### trimLeft(str)
 #### desc : 
+trim left space characters of **str**
 #### params : 
-- str : 
+- str : target string
 #### return : 
+return trimmed string(**str** is not changed)
+
 --------
 ### trimRight(str)
 #### desc : 
+trim right space characters of **str**
 #### params : 
-- str : 
+- str : target string
 #### return : 
+return trimmed string(**str** is not changed)
+
 --------
 ### startsWith(str, start)
 #### desc : 
+check **str** has **start** prefix
 #### params : 
-- str : 
-- start : 
+- str : target string
+- start : target prefix
 #### return : 
+return **true** when **str** has **start** prefix, otherwise return **false**
+
 --------
 ### endsWith(str, ending)
 #### desc : 
+check **str** has **start** postfix
 #### params : 
-- str : 
-- ending : 
+- str : target string
+- ending : target postfix
 #### return : 
+return **true** when **str** has **start** postfix, otherwise return **false**
+
 --------
 ### leftPad(str, length, character)
 #### desc : 
