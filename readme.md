@@ -296,9 +296,12 @@ this is a simple lua util functions collection for easy usage and intergration
 --------
 ### readonly(source)
 #### desc : 
+make **source** table *readonly*(you can't set or add elements of source table after setting, pay attention that use **rawset** can break readonly table)
 #### params : 
-- source : 
+- source : source table
 #### return : 
+return readonly table
+
 --------
 ### dump(source, depth, indent)
 #### desc : 
@@ -313,10 +316,13 @@ dump string of **source** table
 --------
 ### clone(source, shallow)
 #### desc : 
+clone **source** table, default is deep clone(**shallow** is false)
 #### params : 
-- source : 
-- shallow : 
+- source : source table
+- shallow : shallow clone or not
 #### return : 
+return cloned table
+
 --------
 ### checkEqual(a, b, ignore_mt)
 #### desc : 
@@ -385,33 +391,45 @@ return **true** when **str** has **start** postfix, otherwise return **false**
 --------
 ### leftPad(str, length, character)
 #### desc : 
+left pad **str** with **character**(default is ' ') to target **length**(total string length including padding characters)
 #### params : 
-- str : 
-- length : 
-- character : 
-#### return : 
+- str : target string
+- length : target length
+- character : padding character
+#### return :
+return padding string(**str** is not changed)
+
 --------
 ### rightPad(str, length, character)
 #### desc : 
+right pad **str** with **character**(default is ' ') to target **length**(total string length including padding characters)
 #### params : 
-- str : 
-- length : 
-- character : 
+- str : target string
+- length : target length
+- character : padding character
 #### return : 
+return padding string(**str** is not changed)
+
 --------
 ### split(str, delim)
 #### desc : 
+split **str** with **delim** characters
 #### params : 
-- str : 
-- delim : 
+- str : target string
+- delim : delimiter characters
 #### return : 
+return a table contains splitted strings
+
 --------
 ### formatParam(str, ...)
 #### desc : 
+format string with param identifier, e.g. formatParam("test {1} string", "format") will return "test format string"
 #### params : 
-- str : 
-- ... : 
+- str : format string
+- ... : varargs
 #### return : 
+return format result string
+
 --------
 --------
 > **math utils**
