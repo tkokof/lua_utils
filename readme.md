@@ -290,9 +290,12 @@ this is a simple lua util functions collection for easy usage and intergration
 --------
 ### seal(source)
 #### desc : 
+make **source** table *sealed*(you can't add elements of source table after setting, pay attention that use **rawset** can break sealed table)
 #### params : 
-- source : 
+- source : source table
 #### return : 
+return sealed table
+
 --------
 ### readonly(source)
 #### desc : 
